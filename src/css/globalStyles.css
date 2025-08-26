@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Azul neon */
+    --blue-dark: #0A0F1F;
+    --blue-soft: #1E2A4A;
+    --blue-bright: #3B82F6;
+    --blue-glow: #60A5FA;
+    --blue-light: #E0F2FE;
+
+    /* Verde Neón */
+    --green-dark: #0D1F1A;
+    --green-soft: #1A3D34;
+    --green-bright: #22C55E;
+    --green-glow: #4ADE80;
+    --green-light: #D1FAE5;
+
+    /* Morado Neón */
+    --purple-dark: #1A0F2E;
+    --purple-soft: #2E1A4D;
+    --purple-bright: #A855F7;
+    --purple-glow: #C084FC;
+    --purple-light: #F3E8FF;
+
+    /* Rojo Neón */
+    --red-dark: #1A0F0F;
+    --red-soft: #4A1E1E;
+    --red-bright: #EF4444;
+    --red-glow: #F87171;
+    --red-light: #FFE4E6;
+}
+
+body{
+    background-color: #121212;
+}

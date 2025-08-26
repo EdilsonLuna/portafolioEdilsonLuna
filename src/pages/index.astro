@@ -1,17 +1,23 @@
 ---
+import '../css/globalStyles.css';
+import '../css/body.css';
 
+import Header from '../layouts/Header.astro';
+import Body from '../layouts/Body.astro';
+import Footer from '../layouts/Footer.astro';
 ---
 
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Edilson Luna Dev</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
-		<h1>Prueba de proyecto en astro Edilson Luna</h1>
+		<Header/>
+		<Body/>
+		<Footer/>
 	</body>
 </html>
