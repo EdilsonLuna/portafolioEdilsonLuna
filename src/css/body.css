@@ -1,5 +1,19 @@
-.profile-photo{
+.arrow-down-container{
+    position: fixed;
+    bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.profile-photo-container{
     width: 200px;
+}
+
+.profile-photo{
+    width: inherit;
     border-radius: 100%;
     transition: 0.3s ease-in-out;
 }
@@ -17,6 +31,27 @@
 }
 
 .about > .container {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container{
+    margin-left: 180px;
+}
+
+.title-container{
+    margin-top: 120px;
+}
+
+.about-me{
+    margin-top: 30px;
+}
+
+
+
+/* .about > .container {
     width: 40%;
     height: fit-content;
     display: grid;
@@ -43,4 +78,4 @@
     align-items: center;
     flex-direction: column;
     margin: auto;
-}
+} */
