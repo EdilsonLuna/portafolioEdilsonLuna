@@ -1,10 +1,67 @@
 <main>
-    <section class="quienSoy">
-        <article>
-            <div class="fotoPerfilContainer">
-                <img src="/fotoPerfil.png" alt="Foto de perfil presentacion Edilson Luna" class="fotoPerfilEL" width="200">
+    <section class="about">
+        <div class="container">
+            <div class="profile-photo-container">
+                <img src="/fotoPerfil.png" alt="Edilson Luna's Profile Photo" class="profile-photo">
             </div>
-        </article>
+            <div class="title-container">
+                <h2>¡Hola! Soy Edilson Luna</h2>
+                <h2>Desarrollador Web Full Stack</h2>
+            </div>
+            <p class="about-me">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dicta iste architecto natus deleniti quod ullam sapiente pariatur saepe distinctio non itaque, eligendi soluta rerum sunt exercitationem consequuntur dolor optio?
+            </p>
+        </div>
+        <div class="arrow-down-container">
+            <p>Desliza para continuar</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+            </svg>
+        </div>
+    </section>
+
+    <section class="habilities">    
+
     </section>
     
+    <section class="projects">
+
+    </section>
+
+    <section class="contact">
+        <div class="p" style="color: transparent;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos necessitatibus impedit hic aliquid, odit repellendus odio nesciunt alias magnam harum eos ullam ad, commodi veniam accusantium perferendis fugiat ex voluptatem iusto? Enim, ducimus? Culpa, tenetur quibusdam odit sit nihil fuga! Sit eius quod nemo necessitatibus nesciunt aspernatur, vero molestias, perspiciatis repellat ea harum! Reprehenderit ea reiciendis, qui culpa maiores impedit error optio sunt unde totam sit quam et nostrum assumenda eum, expedita explicabo iusto autem dolorum enim odit. Odio voluptate molestias ratione commodi reprehenderit, aperiam provident cum id expedita consequuntur molestiae eum officiis aut, ea obcaecati atque nulla minima ipsum adipisci minus dolorum qui! Sit maiores vel odio labore ex veritatis quod quam asperiores harum accusamus, consequuntur nam aliquam quibusdam expedita, sed inventore qui magnam, tempora nobis impedit beatae itaque! Necessitatibus, saepe! Nemo placeat repellendus odit veniam perferendis deserunt in id ipsa exercitationem optio? Iste sapiente cumque, omnis doloribus minima debitis voluptas, earum tempora aliquam autem eius. Voluptatem praesentium magnam quam eius aspernatur animi libero dignissimos assumenda eos veniam distinctio eaque corporis quo dolor labore omnis autem nemo, asperiores quis ea dicta impedit aperiam quibusdam! Obcaecati a amet inventore maxime cumque sunt aliquam cupiditate atque repellendus quidem consectetur assumenda magnam, autem natus deserunt eos unde! Nulla aspernatur officiis nemo, molestiae alias ratione placeat, commodi non soluta autem, perferendis sequi aliquam? Vel laboriosam sapiente dolorem quaerat earum doloribus accusamus perspiciatis repellat fugiat, eligendi nobis aut tenetur inventore reprehenderit nesciunt, accusantium quam consequuntur explicabo. Sit exercitationem illo saepe laboriosam sequi dolore non nam commodi architecto, veritatis voluptas. Enim sequi ipsam dicta minus doloribus corporis, eos, est dolorem, assumenda nam quibusdam aspernatur provident natus aut laboriosam sit ducimus suscipit harum nemo sapiente impedit ullam. Excepturi deleniti magnam rerum, eveniet nihil temporibus molestiae nam dignissimos suscipit. Ullam, accusamus ducimus. Hic perferendis aut odit similique.</div>
+    </section>
+
 </main>
+
+<script>
+    import gsap from "gsap";
+    import {ScrollTrigger} from "gsap/ScrollTrigger";
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to('.arrow-down-container',{
+        scrollTrigger : {
+            trigger: '.arrow-down-container',
+            start: '+=150 bottom',
+            end: 'bottom +=750',
+            scrub: 1,
+            markers: true,    
+        },
+        y: 100,
+        opacity: 0,
+        duration: 1,
+    });
+
+    const mainTimeLine = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.about',
+            start: 'top top',
+            end: 'bottom bottom',
+            scrub: 1,
+            pin: false,
+            // markers: true,
+        }
+    });
+
+</script>
