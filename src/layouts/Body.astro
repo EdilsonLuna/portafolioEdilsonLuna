@@ -11,7 +11,10 @@
                 </div>
                 <div class="about-me">
                     <h2>¿Quién Soy?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore placeat aliquid cupiditate deserunt. Nobis id quam dicta sequi voluptatibus? Ea beatae quis neque explicabo atque obcaecati totam dicta distinctio iste?</p>
+                    <p>
+                        Soy una persona proactiva, excelente, compañero de equipo, organizado y responsable. Destacándome como desarrollador full-stack he estado presente en todos los procesos del desarrollo de una aplicación, empleando las mejores prácticas de desarrollo para contribuir a un sistema robusto, estable y escalable.
+
+                    </p>
                 </div>
             </div>
             
@@ -63,6 +66,15 @@
         stagger: 0.05, // 0.05 seconds between each,
     });
 
+    // Animación infinita del SVG hacia arriba y hacia abajo
+    gsap.to('.bi-arrow-down', {
+        duration: 0.8,
+        y: 10,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut"
+    });
+
     //Animacion para desaparecer la arrowDown cuando se inicia el scroll
     gsap.to('.arrow-down-container',{
         scrollTrigger : {
@@ -79,34 +91,36 @@
     ScrollTrigger.create({
         trigger: '.about',
         start: 'top top',
-        end: 'bottom +=700',
+        end: '+=25%',
         pin: '.profile-photo-container',
-        pinSpacing: true,
-        // markers: true
     });
 
-    //TimeLine para el texto principal
     const mainTimeLine = gsap.timeline({
-        scrollTrigger:{
-            trigger: '.about',
-            start: 'top top',
-            end: '+=100',
-            scrub: 2,
-            markers: true,
-        }
+    scrollTrigger:{
+        trigger: '.about',
+        start: 'top top',
+        end: '+=25%',  // o 'bottom top'
+        scrub: 2,
+        markers: true,
+    }
     });
 
     mainTimeLine
-    .to('.title-container',{
-        y:-100,
+    .to('.title-container', {
+        y: -100,
         opacity: 0,
         duration: 1,
     })
-    .from('.about-me',{
-        y:100,
+    .to('.about-me', {
+        marginTop: 260
+    })
+    .from('.about-me', {
+        y: 100,
         opacity: 0,
-        duration: 1,
-    },'+=.5')
+        duration: 2,
+    }, '+=0.1')
+    
+
     
 
 </script>

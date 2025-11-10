@@ -42,3 +42,9 @@
 body{
     background-color: #121212;
 }
+
+@media (max-width:768px){
+    *{
+        font-size: medium;
+    }
+}
