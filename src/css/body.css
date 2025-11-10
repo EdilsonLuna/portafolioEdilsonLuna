@@ -173,6 +173,188 @@
     z-index: 1;
 }
 
+/* ============= HABILIDADES COLORES ESPECÍFICOS ============= */
+
+/* Angular - Rojo oficial */
+.h-angular {
+    border-color: #DD0031 !important;
+    background: rgba(221, 0, 49, 0.1) !important;
+}
+
+.h-angular:hover {
+    border-color: #DD0031 !important;
+    background: rgba(221, 0, 49, 0.2) !important;
+    box-shadow: 
+        0 0 25px rgba(221, 0, 49, 0.4),
+        inset 0 0 20px rgba(221, 0, 49, 0.1),
+        0 0 40px rgba(221, 0, 49, 0.2) !important;
+}
+
+/* Astro - Naranja vivo */
+.h-astro {
+    border-color: #FF5D01 !important;
+    background: rgba(255, 93, 1, 0.1) !important;
+}
+
+.h-astro:hover {
+    border-color: #FF5D01 !important;
+    background: rgba(255, 93, 1, 0.2) !important;
+    box-shadow: 
+        0 0 25px rgba(255, 93, 1, 0.4),
+        inset 0 0 20px rgba(255, 93, 1, 0.1),
+        0 0 40px rgba(255, 93, 1, 0.2) !important;
+}
+
+/* Express - Violeta vivo */
+.h-express {
+    border-color: #9333EA !important;
+    background: rgba(147, 51, 234, 0.1) !important;
+}
+
+.h-express:hover {
+    border-color: #9333EA !important;
+    background: rgba(147, 51, 234, 0.2) !important;
+    box-shadow: 
+        0 0 25px rgba(147, 51, 234, 0.4),
+        inset 0 0 20px rgba(147, 51, 234, 0.1),
+        0 0 40px rgba(147, 51, 234, 0.2) !important;
+}
+
+/* NodeJs - Verde clásico */
+.h-NodeJs {
+    border-color: #339933 !important;
+    background: rgba(51, 153, 51, 0.1) !important;
+}
+
+.h-NodeJs:hover {
+    border-color: #339933 !important;
+    background: rgba(51, 153, 51, 0.2) !important;
+    box-shadow: 
+        0 0 25px rgba(51, 153, 51, 0.4),
+        inset 0 0 20px rgba(51, 153, 51, 0.1),
+        0 0 40px rgba(51, 153, 51, 0.2) !important;
+}
+
+/* TypeScript - Azul oficial */
+.h-typescript {
+    border-color: #3178C6 !important;
+    background: rgba(49, 120, 198, 0.1) !important;
+}
+
+.h-typescript:hover {
+    border-color: #3178C6 !important;
+    background: rgba(49, 120, 198, 0.2) !important;
+    box-shadow: 
+        0 0 25px rgba(49, 120, 198, 0.4),
+        inset 0 0 20px rgba(49, 120, 198, 0.1),
+        0 0 40px rgba(49, 120, 198, 0.2) !important;
+}
+
+/* MySQL - Azul oficial */
+.h-mysql {
+    border-color: #4479A1 !important;
+    background: rgba(68, 121, 161, 0.1) !important;
+}
+
+.h-mysql:hover {
+    border-color: #4479A1 !important;
+    background: rgba(68, 121, 161, 0.2) !important;
+    box-shadow: 
+        0 0 25px rgba(68, 121, 161, 0.4),
+        inset 0 0 20px rgba(68, 121, 161, 0.1),
+        0 0 40px rgba(68, 121, 161, 0.2) !important;
+}
+
+/* PostgreSQL - Azul oscuro */
+.h-postgre {
+    border-color: #336791 !important;
+    background: rgba(51, 103, 145, 0.1) !important;
+}
+
+.h-postgre:hover {
+    border-color: #336791 !important;
+    background: rgba(51, 103, 145, 0.2) !important;
+    box-shadow: 
+        0 0 25px rgba(51, 103, 145, 0.4),
+        inset 0 0 20px rgba(51, 103, 145, 0.1),
+        0 0 40px rgba(51, 103, 145, 0.2) !important;
+}
+
+/* SQL Server - Rojo característico */
+.h-sqlserver {
+    border-color: #A91D22 !important;
+    background: rgba(169, 29, 34, 0.1) !important;
+}
+
+.h-sqlserver:hover {
+    border-color: #A91D22 !important;
+    background: rgba(169, 29, 34, 0.2) !important;
+    box-shadow: 
+        0 0 25px rgba(169, 29, 34, 0.4),
+        inset 0 0 20px rgba(169, 29, 34, 0.1),
+        0 0 40px rgba(169, 29, 34, 0.2) !important;
+}
+
+/* Git/GitHub/GitLab - Naranja GitLab */
+.h-git {
+    border-color: #FC6D26 !important;
+    background: rgba(252, 109, 38, 0.1) !important;
+}
+
+.h-git:hover {
+    border-color: #FC6D26 !important;
+    background: rgba(252, 109, 38, 0.2) !important;
+    box-shadow: 
+        0 0 25px rgba(252, 109, 38, 0.4),
+        inset 0 0 20px rgba(252, 109, 38, 0.1),
+        0 0 40px rgba(252, 109, 38, 0.2) !important;
+}
+
+/* Scrum - Azul suave */
+.h-scrum {
+    border-color: #61DBFB !important;
+    background: rgba(97, 219, 251, 0.1) !important;
+}
+
+.h-scrum:hover {
+    border-color: #61DBFB !important;
+    background: rgba(97, 219, 251, 0.2) !important;
+    box-shadow: 
+        0 0 25px rgba(97, 219, 251, 0.4),
+        inset 0 0 20px rgba(97, 219, 251, 0.1),
+        0 0 40px rgba(97, 219, 251, 0.2) !important;
+}
+
+/* Linux - Amarillo Tux */
+.h-linux {
+    border-color: #FCC624 !important;
+    background: rgba(252, 198, 36, 0.1) !important;
+}
+
+.h-linux:hover {
+    border-color: #FCC624 !important;
+    background: rgba(252, 198, 36, 0.2) !important;
+    box-shadow: 
+        0 0 25px rgba(252, 198, 36, 0.4),
+        inset 0 0 20px rgba(252, 198, 36, 0.1),
+        0 0 40px rgba(252, 198, 36, 0.2) !important;
+}
+
+/* APIs REST - Azul celeste */
+.h-apirest {
+    border-color: #00BCD4 !important;
+    background: rgba(0, 188, 212, 0.1) !important;
+}
+
+.h-apirest:hover {
+    border-color: #00BCD4 !important;
+    background: rgba(0, 188, 212, 0.2) !important;
+    box-shadow: 
+        0 0 25px rgba(0, 188, 212, 0.4),
+        inset 0 0 20px rgba(0, 188, 212, 0.1),
+        0 0 40px rgba(0, 188, 212, 0.2) !important;
+}
+
 
 @media (max-width:768px){
     .about > .container {
