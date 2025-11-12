@@ -95,9 +95,13 @@
     import gsap from "gsap";
     import {ScrollTrigger} from "gsap/ScrollTrigger";
     import {SplitText} from "gsap/SplitText";
+    import {initFlashlightEffect} from "../ts/flashlightEffect";
 
     gsap.registerPlugin(ScrollTrigger); //Registro de plugin para poder manejar el scroll y las animaciones
     gsap.registerPlugin(SplitText); //Registro de plugin para poder manejar las animaciones de texto
+
+    // Inicializar el efecto de linterna
+    initFlashlightEffect();
 
     // split elements with the class "split" into words and characters
     let split = SplitText.create(".name-split-text", { type: "words, chars" });

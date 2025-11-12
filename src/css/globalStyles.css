@@ -41,6 +41,17 @@
 
 body{
     background-color: #121212;
+    background-image: url('/Firma_escala_grises_no_bg.png');
+    background-repeat: repeat;
+    background-size: 200px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Aseguramos que el contenido esté por encima del overlay de linterna */
+body > *:not(#flashlight-overlay) {
+    position: relative;
+    z-index: 2;
 }
 
 @media (max-width:768px){
