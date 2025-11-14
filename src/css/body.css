@@ -46,6 +46,14 @@
     text-align: center;
 }
 
+.title-container > h1 {
+    font-size: 1.8rem;
+}
+
+.subTitle, .subTitle > div > div{
+    font-size: 1.3rem;
+}
+
 .about-me{
     margin-top: 30px;
 }
@@ -79,7 +87,7 @@
     /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%); */
 }
 
-.habilities h2 {
+.title-separator h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 40px;
@@ -91,7 +99,7 @@
     letter-spacing: 1px;
 }
 
-.habilities hr {
+.title-separator hr {
     width: 60px;
     height: 3px;
     border: none;
@@ -355,6 +363,143 @@
         0 0 40px rgba(0, 188, 212, 0.2) !important;
 }
 
+/* ============= PROYECTOS SECTION ============= */
+
+.projects {
+    width: 100%;
+    padding: 80px 20px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.target{
+    max-width: 500px;
+    min-width: 300px;
+    margin: 22px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.target:hover {
+    transform: translateY(-8px);
+    border-color: rgba(220, 38, 38, 0.5);
+    box-shadow: 
+        inset 0 0 30px rgba(220, 38, 38, 0.2),
+        0 0 40px rgba(220, 38, 38, 0.15),
+        0 15px 50px rgba(0, 0, 0, 0.3);
+}
+
+.target-header{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+    position: relative;
+}
+
+.img-container{
+    width: 100%;
+    height: 100%;
+    background-image: url('/screenShotDelthacLanding.png');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.4s ease;
+}
+
+.target:hover .img-container {
+    transform: scale(1.15);
+}
+
+.target-body {
+    padding: 20px;
+}
+
+.target-body h1 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.target-body p {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.target-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 20px;
+    margin: 20px 0;
+}
+
+.target-technologies .technologie {
+    background: rgba(220, 38, 38, 0.15);
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid rgba(220, 38, 38, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.target-technologies .technologie:hover {
+    background: rgba(220, 38, 38, 0.8);
+    border-color: rgba(220, 38, 38, 0.9);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(220, 38, 38, 0.3);
+}
+
+.target-technologies .technologie p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.target-technologies .technologie:hover p {
+    color: #fff;
+}
+
+.target-footer {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.target-footer:hover {
+    color: rgba(220, 38, 38, 0.9);
+    gap: 12px;
+}
+
+.target-footer svg {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.target-footer:hover svg {
+    transform: translateX(5px);
+}
+
 
 @media (max-width:768px){
     .about > .container {
@@ -363,7 +508,7 @@
         justify-content: center;
         align-items: center;
         row-gap: 90px;
-        margin-top: -50%; /* Ajusta este valor según necesites */
+        margin-top: 10%; /* Ajusta este valor según necesites */
     }
 
     .text-container{

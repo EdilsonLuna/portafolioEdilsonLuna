@@ -6,13 +6,18 @@
             </div>
             <div class="text-container">
                 <div class="title-container">
-                    <h2>¡Hola! Soy Edilson Luna</h2>
-                    <h2 class="name-split-text">Desarrollador Web Full Stack</h2>
+                    <h1>¡Hola! Soy Edilson Luna</h1>
+                    <h1 class="name-split-text subTitle">Desarrollador Web Full Stack</h1>
                 </div>
                 <div class="about-me">
-                    <h2>¿Quién Soy?</h2>
+                    <h2 class="subTitle">¿Quién Soy?</h2>
+                    <br>
                     <p>
-                        Soy una persona proactiva, excelente, compañero de equipo, organizado y responsable. Destacándome como desarrollador full-stack he estado presente en todos los procesos del desarrollo de una aplicación, empleando las mejores prácticas de desarrollo para contribuir a un sistema robusto, estable y escalable.
+                        Desarrollador web con 2 años de experencia, enfocado en crear experiencias digitales dinámicas y bien estructuradas. Me apasiona transformar ideas en soluciones funcionales, cuidando tanto la lógica como el diseño.
+                    </p>
+                    <br>
+                    <p>
+                        Aprendo constantemente, estudio para mejorar cada día y usar la tecnología con el fin de crear algo que deje huella. Mi objetivo es crecer como profesional mientras construyo proyectos que hablen por mí.
                     </p>
                 </div>
             </div>
@@ -26,9 +31,11 @@
         </div>
     </section>
 
-    <section class="habilities">    
-        <h2>Habilidades</h2>
-        <hr>
+    <section class="habilities">
+        <div class="habilities-container title-separator">
+            <h2>Habilidades</h2>
+            <hr>
+        </div>
         <div class="habilities-group">
             <div class="frontend-habilities habilitie-container">
                 <h3>Frontend 🖥️</h3>
@@ -83,7 +90,38 @@
     </section>
     
     <section class="projects">
-
+        <div class="title-projects-container title-separator">
+            <h2>Proyectos Destacados</h2>
+            <hr>
+        </div>
+        <div class="projects-container">
+            <div class="target">
+                <div class="target-header">
+                    <div class="img-container"></div>
+                </div>
+                <div class="target-body">
+                    <h1>Delthac Landing Page</h1>
+                    <p>Desarrollé una landing page propuesta para Delthac1 usando Astro, con un diseño sobrio y elegante que resalta sus servicios, fortalezas y empresas asociadas. El objetivo fue crear una presentación corporativa clara, moderna y alineada con la identidad profesional de la compañía.</p>
+                </div>
+                <div class="target-technologies">
+                    <div class="technologie">
+                        <p>Astro</p>
+                    </div>
+                    <div class="technologie">
+                        <p>TypeScript</p>
+                    </div>
+                    <div class="technologie">
+                        <p>CSS</p>
+                    </div>
+                </div>
+                <a href="https://delthac-landing-page-eta.vercel.app/#servicios" target="_blank" class="target-footer">
+                    Ver proyecto
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
     </section>
 
     <section class="contact">
@@ -156,7 +194,7 @@
         "(min-width: 765px)": function() {
             // Solo se ejecuta cuando el ancho de la pantalla es mayor a 765px
             mainTimeLine.from(".title-container", {
-            marginTop: 240,
+            marginTop: 430,
             });
         },
     });
