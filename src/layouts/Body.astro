@@ -1,4 +1,13 @@
 <main>
+
+    <div class="scroll-up-container">
+        <a href="#" class="scroll-to-top" id="scroll-to-top" aria-label="Volver al inicio">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				<polyline points="18 15 12 9 6 15"></polyline>
+			</svg>
+		</a>
+    </div>
+    
     <section class="about">
         <div class="container">
             <div class="profile-photo-container">
@@ -97,7 +106,7 @@
         <div class="projects-container">
             <div class="target">
                 <div class="target-header">
-                    <div class="img-container"></div>
+                    <div class="img-container img-target-delthac"></div>
                 </div>
                 <div class="target-body">
                     <h1>Delthac Landing Page</h1>
@@ -121,10 +130,131 @@
                     </svg>
                 </a>
             </div>
+            <div class="target">
+                <div class="target-header">
+                    <div class="img-container img-target-portfolio"></div>
+                </div>
+                <div class="target-body">
+                    <h1>Portafolio Personal v1</h1>
+                    <p>
+                        Construí esta landing page con Astro buscando un estilo formal, sobrio y profesional. Mi intención es que encuentres aquí, de forma clara y directa, todo lo que necesitas para conocer mi trabajo, mi arte y las habilidades que me representan.
+                    </p>
+                </div>
+                <div class="target-technologies">
+                    <div class="technologie">
+                        <p>Astro</p>
+                    </div>
+                    <div class="technologie">
+                        <p>Html</p>
+                    </div>
+                    <div class="technologie">
+                        <p>CSS</p>
+                    </div>
+                </div>
+                <a href="#" class="target-footer" >
+                    Ver proyecto
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </section>
 
-    <section class="contact">
+    <section class="experience">
+        <div class="title-experience-container title-separator">
+            <h2>Experiencia Laboral</h2>
+            <hr>
+        </div>
+        <div class="experience-container">
+
+            <div class="timeline-item">
+                <div class="timeline-date">
+                    <span class="date-start">Julio 2025</span>
+                    <span class="date-separator">-</span>
+                    <span class="date-end">Actualidad</span>
+                </div>
+                <div class="timeline-line">
+                    <div class="timeline-circle"></div>
+                    <div class="timeline-connector"></div>
+                </div>
+                <div class="timeline-card">
+                    <h3>Desarrollador Full Stack</h3>
+                    <h4>Delthac1 Seguridad</h4>
+                    <p>
+                        Actualmente apoyo el desarrollo y mantenimiento de Delamano, la aplicación empresarial de Delthac1, trabajando en la creación y mejora de módulos con Angular 19, PHP y PostgreSQL. Además, desarrollé desde cero un portal corporativo para QS1, donde los clientes pueden radicar órdenes de servicio y la empresa gestionar su asignación a los operarios.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Experiencia SYC desarrollo -->
+            <div class="timeline-item">
+                <div class="timeline-date">
+                    <span class="date-start">Febrero 2025</span>
+                    <span class="date-separator">-</span>
+                    <span class="date-end">Julio 2025</span>
+                </div>
+                <div class="timeline-line">
+                    <div class="timeline-circle"></div>
+                    <div class="timeline-connector"></div>
+                </div>
+                <div class="timeline-card">
+                    <h3>Desarrollador Full Stack</h3>
+                    <h4>Sistemas y Computadores S.A (SYC)</h4>
+                    <p>
+                        En el grupo de desarrollo de Colpensiones desarrollé y mantuve portales web internos y públicos utilizando C# y WebForms, y creé autómatas para automatizar procesos con .NET Core 8. Implementé prácticas de CI/CD con Azure DevOps y participé en la adopción de contenedores Docker para portales y autómatas. Además, desarrollé una solución Cliente-Servidor en .NET Core 8 donde un servidor, basado en SignalR, el cual gestiona autómatas mediante colas FIFO, permitiendo escalar horizontalmente y garantizando el procesamiento único de cada tarea.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Experiencia SYC Practicas -->
+            <div class="timeline-item">
+                <div class="timeline-date">
+                    <span class="date-start">Agosto 2024</span>
+                    <span class="date-separator">-</span>
+                    <span class="date-end">Febrero 2025</span>
+                </div>
+                <div class="timeline-line">
+                    <div class="timeline-circle"></div>
+                    <div class="timeline-connector"></div>
+                </div>
+                <div class="timeline-card">
+                    <h3>Prácticas Universitarias</h3>
+                    <h4>Sistemas y Computadores S.A (SYC)</h4>
+                    <p>Realización de practicas empresariales para culminar estudios universitarios.</p>
+                </div>
+            </div>
+
+            <!-- Experiencia TIRESIA -->
+            <div class="timeline-item">
+                <div class="timeline-date">
+                    <span class="date-start">Septiembre 2023</span>
+                    <span class="date-separator">-</span>
+                    <span class="date-end">Agosto 2024</span>
+                </div>
+                <div class="timeline-line">
+                    <div class="timeline-circle"></div>
+                    <div class="timeline-connector"></div>
+                </div>
+                <div class="timeline-card">
+                    <h3>Desarrollador Full stack</h3>
+                    <h4>TIRESIA S.A.S</h4>
+                    <ul>
+                        <li>
+                            Desarrollé y ayudé al mejoramiento del sistema ERP MAIA CLOUD ERP, creando módulos nuevos
+solicitados o dando mantenimiento a los existentes. Así también para el sistema POS MAIA POS
+                        </li>
+                        <li>
+                            Gestión y creación del modelo de base de datos para los desarrollos asignados haciendo uso de base de
+datos MySQL
+                        </li>
+                        <li>
+                            Usé como marco de desarrollo la metodología ágil Scrum
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
 </main>
@@ -214,7 +344,15 @@
         duration: 2,
     }, '+=0.1')
     
-
+    // Mostrar/ocultar botón scroll to top después de 300px
+    const scrollUpContainer = document.getElementById('scroll-to-top');
     
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300 && scrollUpContainer) {
+            scrollUpContainer.style.visibility = 'visible';
+        }else if (window.scrollY < 300 && scrollUpContainer){
+            scrollUpContainer.style.visibility = 'hidden';
+        }
+    });
 
 </script>

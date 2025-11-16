@@ -1,0 +1,38 @@
+.contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.social-links li {
+    margin: 0;
+    color: inherit;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    height: fit-content;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.social-links li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}

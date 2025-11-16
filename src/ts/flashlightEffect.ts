@@ -4,6 +4,11 @@
  */
 
 export function initFlashlightEffect() {
+    // Solo activar el efecto en dispositivos con ancho mayor a 768px
+    if (window.innerWidth < 768) {
+        return;
+    }
+
     // Crear el overlay dinámicamente
     const overlay = document.createElement('div');
     overlay.id = 'flashlight-overlay';
@@ -15,7 +20,7 @@ export function initFlashlightEffect() {
         height: 100%;
         pointer-events: none;
         z-index: 1;
-        background: radial-gradient(circle 100px at 50% 50%, transparent 0%, transparent 50%, #121212 100%);
+        background: radial-gradient(circle 100px at 50% 50%, rgba(18, 18, 18, 0.4) 0%, rgba(18, 18, 18, 0.6) 40%, rgba(18, 18, 18, 0.85) 70%, #121212 100%);
     `;
     document.body.appendChild(overlay);
 
